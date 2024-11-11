@@ -24,7 +24,7 @@ public class Beers {
     private Float srm;
     private Long upc;
     private String filepath;
-    private String description;
+    private String descript;
     private Integer addUser;
     private LocalDateTime lastModified;
 }

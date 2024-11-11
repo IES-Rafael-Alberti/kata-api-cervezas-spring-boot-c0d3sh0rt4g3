@@ -4,7 +4,7 @@ import org.example.apicerveza.entities.Beers;
 import org.example.apicerveza.repositories.BeersRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
-import org.springframework.data.domain.Pageable;  // Asegúrate de importar esta clase
+import org.springframework.data.domain.Pageable;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -24,7 +24,7 @@ public class BeersController {
         return beerRepository.findAll(pageable);
     }
 
-    @GetMapping("/beer/id")
+    @GetMapping("/beer/{id}")
     public ResponseEntity<Beers> getBeersById(@PathVariable long id){
         return beerRepository.findById(id)
                 .map(ResponseEntity::ok)
@@ -44,7 +44,7 @@ public class BeersController {
                 beer.setSrm(updatedBeers.getSrm());
                 beer.setUpc(updatedBeers.getUpc());
                 beer.setFilepath(updatedBeers.getFilepath());
-                beer.setDescription(updatedBeers.getDescription());
+                beer.setDescript(updatedBeers.getDescript());
                 beer.setAddUser(updatedBeers.getAddUser());
                 beer.setLastModified(LocalDateTime.now());
                 return ResponseEntity.ok(beerRepository.save(beer));
@@ -52,7 +52,7 @@ public class BeersController {
             .orElse(ResponseEntity.notFound().build());
     }
 
-    @PostMapping("/beer/{id}")
+    @PostMapping("/beer")
     public ResponseEntity<Beers> createBeers(@RequestBody Beers beer){
         return ResponseEntity.ok(beerRepository.save(beer));
     }
