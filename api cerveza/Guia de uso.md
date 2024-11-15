@@ -8,7 +8,8 @@ Esta API permite gestionar la información relacionada con cervezas, cervecería
 
 **Recurso:** `/api/beers`
 
-#### **GET /api/beers**
+**GET /api/beers**
+
 Obtiene una lista paginada de todas las cervezas.
 
 **Ejemplo:**
@@ -51,7 +52,7 @@ GET http://localhost:8080/api/beers
 ]
 ```
 
-### **GET /api/beer/{id}**
+**GET /api/beer/{id}**
 
 Obtiene la información de una cerveza específica por su ID.
 
@@ -79,7 +80,7 @@ GET http://localhost:8080/api/beer/1
     }
 ]
 ```
-### **POST /api/beer**
+**POST /api/beer**
 
 Crea una nueva cerveza. Debes enviar los datos de la cerveza en el cuerpo de la solicitud.
 
@@ -118,8 +119,7 @@ Content-Type: application/json
     "addUser": 1
 }
 ```
-
-### **PUT /api/beer/{id}**
+**PUT /api/beer/{id}**
 
 Actualiza la información de una cerveza específica por su ID.
 
@@ -159,7 +159,7 @@ Content-Type: application/json
 }
 ```
 
-### **DELETE /api/beer/{id}**
+**DELETE /api/beer/{id}**
 
 Elimina una cerveza específica por su ID.
 
@@ -176,7 +176,8 @@ DELETE http://localhost:8080/api/beer/4
 
 **Recurso:** `/api/breweries`
 
-#### **GET /api/breweries**
+**GET /api/breweries**
+
 Obtiene una lista paginada de todas las cervecerías'.
 
 **Ejemplo:**
@@ -221,7 +222,7 @@ GET http://localhost:8080/api/breweries
 ]
 ```
 
-### **GET /api/brewerie/{id}**
+**GET /api/brewerie/{id}**
 
 Obtiene la información de una cervecería específica por su ID.
 
@@ -253,7 +254,8 @@ GET http://localhost:8080/api/brewerie/3
 
 **Recurso:** `/api/categories`
 
-#### **GET /api/categories**
+**GET /api/categories**
+
 Obtiene una lista paginada de todas las categorías.
 
 **Ejemplo:**
@@ -276,7 +278,7 @@ GET http://localhost:8080/api/categories
 ]
 ```
 
-### **GET /api/categorie/{id}**
+**GET /api/categorie/{id}**
 
 Obtiene la información de una categoría específica por su ID.
 
@@ -297,7 +299,8 @@ GET http://localhost:8080/api/categorie/9
 
 **Recurso:** `/api/styles`
 
-#### **GET /api/styles**
+**GET /api/styles**
+
 Obtiene una lista paginada de todos los estilos.
 
 **Ejemplo:**
@@ -322,7 +325,7 @@ GET http://localhost:8080/api/styles
 ]
 ```
 
-### **GET /api/style/{id}**
+**GET /api/style/{id}**
 
 Obtiene la información de una cervecería específica por su ID.
 
