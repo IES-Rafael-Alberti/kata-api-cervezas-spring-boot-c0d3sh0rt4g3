@@ -1,0 +1,52 @@
+### Obtener todas las cervezas
+GET http://localhost:8080/api/beers
+
+<> 2024-11-15T122109.200.json
+
+### Obtener una cerveza por ID
+GET http://localhost:8080/api/beer/1
+
+<> 2024-11-15T122121.200.json
+
+### Crear una nueva cerveza
+POST http://localhost:8080/api/beer
+Content-Type: application/json
+
+{
+    "name": "New Beer",
+    "breweryId": 1,
+    "categoryId": 2,
+    "styleId": 3,
+    "abv": 5.5,
+    "ibu": 18,
+    "srm": 8,
+    "upc": "987654321098",
+    "filepath": "path/to/file",
+    "descript": "Description of New Beer",
+    "addUser": 1
+}
+
+<> 2024-11-15T122126.200.json
+
+### Editar una cerveza por id
+PUT http://localhost:8080/api/beer/9
+Content-Type: application/json
+
+{
+    "name": "New Edited Beer",
+    "breweryId": 2,
+    "categoryId": 3,
+    "styleId": 4,
+    "abv": 5.6,
+    "ibu": 19,
+    "srm": 9,
+    "upc": "987654321098",
+    "filepath": "path/to/file",
+    "descript": "Description of New Beer",
+    "addUser": 1
+}
+
+<> 2024-11-15T122150.200.json
+
+### Borrar una cerveza por id
+DELETE http://localhost:8080/api/beer/5

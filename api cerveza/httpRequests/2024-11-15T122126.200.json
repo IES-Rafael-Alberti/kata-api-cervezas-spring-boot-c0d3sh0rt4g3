@@ -1,0 +1,15 @@
+{
+  "id": 5919,
+  "breweryId": 1,
+  "name": "New Beer",
+  "categoryId": 2,
+  "styleId": 3,
+  "abv": 5.5,
+  "ibu": 18.0,
+  "srm": 8.0,
+  "upc": 987654321098,
+  "filepath": "path/to/file",
+  "descript": "Description of New Beer",
+  "addUser": 1,
+  "lastModified": null
+}

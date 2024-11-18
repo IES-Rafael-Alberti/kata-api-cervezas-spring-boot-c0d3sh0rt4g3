@@ -1,0 +1,15 @@
+{
+  "id": 1,
+  "breweryId": 812,
+  "name": "Hocus Pocus",
+  "categoryId": null,
+  "styleId": 116,
+  "abv": 4.5,
+  "ibu": 0.0,
+  "srm": 0.0,
+  "upc": 0,
+  "filepath": "",
+  "descript": "Our take on a classic summer ale.  A toast to weeds, rays, and summer haze.  A light, crisp ale for mowing lawns, hitting lazy fly balls, and communing with nature, Hocus Pocus is offered up as a summer sacrifice to clodless days.\r\n\r\nIts malty sweetness finishes tart and crisp and is best apprediated with a wedge of orange.",
+  "addUser": 0,
+  "lastModified": null
+}
